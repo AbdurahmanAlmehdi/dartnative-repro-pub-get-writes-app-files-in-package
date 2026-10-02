@@ -1,5 +1,7 @@
 # Repro: `dn pub get` in a Dart-only package writes app files into it
 
+Issue: https://github.com/DartNative/dartnative/issues/73
+
 A Dart-only package (no native code, no `dartnative:` block) that depends on
 `dartnative_path_provider`. Running `dn pub get` in it treats the package as
 an app: it writes `lib/dartnative_plugin_registrant.dart`, `dn_plugins.lock`
